@@ -6,8 +6,15 @@
  * @param string $value Value to be validated
  * @return boolean
  */
-function luhn($value)
+function luhn($value = '')
 {
+	// We'll just have to return false if the provided value
+	// is blank nor a valid string
+	if ( !is_string($value) || !strlen($value) )
+	{
+		return false;
+	}
+
 	// Start the first number as an even position
 	$isEven = true; // even-position flag
 	$total = 0; // Total value of all the digits
