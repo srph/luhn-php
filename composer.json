@@ -1,0 +1,12 @@
+{
+    "name": "srph/luhn.php",
+    "description": "An implementation of Luhn algorithm (aka mod-10 algorithm) in PHP.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "srph",
+            "email": "seraphipod@gmail.com"
+        }
+    ],
+    "require": {}
+}
