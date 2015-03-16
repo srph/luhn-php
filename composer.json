@@ -11,5 +11,7 @@
     "autoload": {
         "files": ["src/Luhn.php"]
     },
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "3.7.x-dev",        
+    }
 }
