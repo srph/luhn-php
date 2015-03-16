@@ -31,7 +31,7 @@ function luhn($value = '')
 		// e..g, 3 => 6
 		$total += !$isEven
 			? $val
-			: ($buffer = $val * 2) > 9 ? $buffer[0] + $buffer[1] : $buffer
+			: ($buffer = $val * 2) > 9 ? $buffer[0] + $buffer[1] : $buffer;
 
 		// Indicate that the next iteration will be an odd position
 		$isEven = !$isEven;
