@@ -1,6 +1,6 @@
 <?php
 
-class LuhnTest extends PHP_Unit_TestSuite {
+class LuhnTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Return true for manually-checked credit cards
 	 */
