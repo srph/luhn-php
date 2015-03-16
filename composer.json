@@ -8,5 +8,8 @@
             "email": "seraphipod@gmail.com"
         }
     ],
+    "autoload": {
+        "files": ["src/Luhn.php"]
+    },
     "require": {}
 }
