@@ -20,7 +20,7 @@ function luhn($value = '')
 	$isEven = true; // even-position flag
 	$total = 0; // Total value of all the digits
 	// Used only to store the result of the doubled value for even positions
-	$buffer;
+	$buffer = null;
 
 	// We'll reverse the iteration order since
 	// he iteration will start from last to first.
