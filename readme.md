@@ -41,8 +41,6 @@ $ phpunit # run tests
 
 ## Acknowledgement
 
-Thanks to [PHPUnit](https://phpunit.de) and [Luhn](https://en.wikipedia.org/Luhn_algorithm).
-
 **luhn.php** © 2015+, Kier Borromeo (srph). Released under the [MIT License](https://mit-license.org).
 
 > [srph.github.io](http://srph.github.io) &nbsp;&middot;&nbsp;
