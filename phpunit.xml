@@ -2,4 +2,13 @@
   colors="true"
   bootstrap="vendor/autoload.php"
   verbose="true">
+  <testsuites>
+    <testsuite name="Luhn Test Suite">
+      <directory suff="Test.php">./tests</directory>
+    </testsuite>
+  </testsuites>
+  
+  <whitelist processUncoveredFilesFromWhitelist="true">
+    <directory suffix=".php">./src</directory>
+  </whitelist>
 </phpunit>
