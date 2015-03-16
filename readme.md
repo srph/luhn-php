@@ -1,6 +1,6 @@
 # luhn.php
 
-An implementation of Luhn algorithm (aka mod-10 algorithm) in PHP.
+An implementation of [Luhn algorithm (aka mod-10 algorithm)](http://en.wikipedia.org/wiki/Luhn_algorithm) in PHP.
 
 \* *This was written to try out PHPUnit, but feel free to use it for anything as long as the MIT License permits*.
 
@@ -16,20 +16,20 @@ An implementation of Luhn algorithm (aka mod-10 algorithm) in PHP.
 1-- **Clone the repository**
 
 ```bash
-$ git clone https://github.com/srph/luhn.php.git
+$ git clone https://github.com/srph/luhn.php.git && cd luhn.php
 ```
 
 2-- **Install development dependencies**
 
 ```bash
-# assure that you are in the root directory of the project
+# ensure that you are in the root directory of the project
 $ composer install
 ```
 
 3-- **Run tests**
 
 ```bash
-# assure that you are in the root directory of the project
+# ensure that you are in the root directory of the project
 $ phpunit
 ```
 
