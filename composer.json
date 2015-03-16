@@ -1,5 +1,5 @@
 {
-    "name": "srph/luhn.php",
+    "name": "srph/luhn",
     "description": "An implementation of Luhn algorithm (aka mod-10 algorithm) in PHP.",
     "license": "MIT",
     "authors": [
