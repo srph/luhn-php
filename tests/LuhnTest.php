@@ -1,5 +1,7 @@
 <?php
 
+use function SRPH\Luhn\luhn;
+
 class LuhnTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Return true for manually-checked credit cards

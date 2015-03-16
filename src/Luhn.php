@@ -9,8 +9,9 @@
 function luhn($value = '')
 {
 	// We'll just have to return false if the provided value
-	// is blank nor a valid string
-	if ( !is_string($value) || !strlen($value) )
+	// is blank nor a valid string. We'll also store the length to
+	// a variable for use later.
+	if ( !is_string($value) || !($length = strlen($value)) )
 	{
 		return false;
 	}
@@ -21,22 +22,23 @@ function luhn($value = '')
 	// Used only to store the result of the doubled value for even positions
 	$buffer;
 
-	// We'll reverse the string order since
-	// he itration will start from last to first.
-	foreach(strrev($value) as $val)
+	// We'll reverse the iteration order since
+	// he iteration will start from last to first.
+	for($i = $length - 1; $i >= 0; $i--)
 	{
+		$_value = $value[$i];
 		// We'll just add normally if the current value is an odd position.
 		// Otherwise, double the current value, and then add both digits if greater than 10
 		// e.g, 6 => 12 => 1 + 2 => 3
 		// e..g, 3 => 6
 		$total += !$isEven
-			? $val
-			: ($buffer = $val * 2) > 9 ? $buffer[0] + $buffer[1] : $buffer;
+			? $_value
+			: (($buffer = $_value * 2) > 9 ? strval($buffer)[0] + strval($buffer)[1] : $buffer);
 
 		// Indicate that the next iteration will be an odd position
 		$isEven = !$isEven;
 	}
 
 	// We'll now check if the number is valid
-	return $total % 10;
+	return $total % 10 === 0;
 }
