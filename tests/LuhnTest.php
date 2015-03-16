@@ -6,8 +6,8 @@ class LuhnTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testShouldReturnTrue()
 	{
-		$this->assertTrue(luhn(''7992739877'));
-		$this->assertTrue(luhn(''79927398712'));
+		$this->assertTrue(luhn('7992739877'));
+		$this->assertTrue(luhn('79927398712'));
 	}
 
 	/**
