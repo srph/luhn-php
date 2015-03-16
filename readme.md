@@ -4,7 +4,11 @@ An implementation of [Luhn algorithm (aka mod-10 algorithm)](http://en.wikipedia
 
 \* *This was written to try out PHPUnit, but feel free to use it for anything as long as the MIT License permits*.
 
-## Building
+## Contribution
+
+Feel free to submit any inquiry, question, issue or pull-request!
+
+### Building
 
 \* *For contributors or for learning purposes only.*
 
@@ -26,11 +30,13 @@ $ git clone https://github.com/srph/luhn.php.git && cd luhn.php
 $ composer install
 ```
 
-3-- **Run tests**
+You're good to go.
+
+### Automation
 
 ```bash
 # ensure that you are in the root directory of the project
-$ phpunit
+$ phpunit # run tests
 ```
 
 ## Acknowledgement
