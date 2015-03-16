@@ -1,15 +1,13 @@
 <?php
 
-use function SRPH\Luhn\luhn;
-
 class LuhnTest extends PHPUnit_Framework_TestCase {
 	/**
 	 * Return true for manually-checked credit cards
 	 */
 	public function testShouldReturnTrue()
 	{
-		$this->assertTrue(luhn('7992739877'));
-		$this->assertTrue(luhn('79927398712'));
+		$this->assertTrue(SRPH\Luhn\luhn('7992739877'));
+		$this->assertTrue(SRPH\Luhn\luhn('79927398712'));
 	}
 
 	/**
@@ -17,10 +15,10 @@ class LuhnTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testShouldReturnFalse()
 	{
-		$this->assertFalse(luhn('7992739871'));
-		$this->assertFalse(luhn('79927398710'));
-		$this->assertFalse(luhn('79927398711'));
-		$this->assertFalse(luhn('79927398713'));
+		$this->assertFalse(SRPH\Luhn\luhn('7992739871'));
+		$this->assertFalse(SRPH\Luhn\luhn('79927398710'));
+		$this->assertFalse(SRPH\Luhn\luhn('79927398711'));
+		$this->assertFalse(SRPH\Luhn\luhn('79927398713'));
 	}
 
 	/**
@@ -28,7 +26,7 @@ class LuhnTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testShouldReturnFalseForBlankStrings()
 	{
-		$this->assertFalse(luhn());
-		$this->assertFalse(luhn(''));
+		$this->assertFalse(SRPH\Luhn\luhn());
+		$this->assertFalse(SRPH\Luhn\luhn(''));
 	}
 }
